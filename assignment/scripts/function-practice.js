@@ -29,8 +29,8 @@ function addNumbers(numberOne, numberTwo) {
 
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree() {
-
+function multiplyThree(numOne, numTwo, numThree) {
+return numOne * numTwo * numThree;
 }
 
 
@@ -39,7 +39,7 @@ function multiplyThree() {
 function isPositive(number) {
   if (number > 0) {
     return 'True'
-  } else if (number < 0) {
+  } else if (number <= 0) {
     return 'False'
   }
   
