@@ -44,21 +44,26 @@ function isPositive(number) {
   } 
 }
 console.log('test isPositive', isPositive(3));
+console.log('test isPositive false outcome', isPositive(-4));
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
 
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
+let animals = ['cat', 'dog', 'cow', 'pig'];
+let colors = [];
 function getLast(array) {
-
+let lastItem = array.pop();
+return lastItem
 }
-
+console.log('test getLast', getLast(animals));
+console.log('test getLast undefined', getLast(colors));
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find(value, array) {
-
+array.length
 }
 
 // ----------------------
