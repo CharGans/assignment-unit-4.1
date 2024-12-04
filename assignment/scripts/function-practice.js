@@ -14,6 +14,7 @@ console.log('Test - should say "Hello World!"', hello());
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
+
 function helloName(name) {
   return `Hello, ${name}!`;
 }
@@ -23,12 +24,14 @@ console.log('test HelloName', helloName('Charlotte'));
 
 
 // 3. Function to add two numbers together & return the result
+
 function addNumbers(numberOne, numberTwo) {
  return numberOne + numberTwo;
 }
 console.log('test addNumbers', addNumbers(2,5));
 
 // 4. Function to multiply three numbers & return the result
+
 function multiplyThree(numOne, numTwo, numThree) {
 return numOne * numTwo * numThree;
 }
@@ -36,6 +39,7 @@ console.log('test multiplyThree', multiplyThree(2, 5, 8));
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
+
 function isPositive(number) {
   if (number > 0) {
     return true
@@ -45,24 +49,30 @@ function isPositive(number) {
 }
 console.log('test isPositive 5', isPositive(5));
 console.log('test isPositive -3', isPositive(-3));
+
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
 
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
+
 let animals = ['cat', 'dog', 'cow', 'pig'];
 let colors = [];
 function getLast(array) {
 let lastItem = array.pop();
 return lastItem;
 }
+
 console.log('test getLast', getLast(animals));
 console.log('test getLast undefined', getLast(colors));
+
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
+
 let food = ['pasta', 'pizza', 'icecream'];
+
 function find(value, array) {
   for (let index = 0; index < array.length; index++)
   if (array[index] === value){
@@ -70,10 +80,12 @@ return true;
   }
 return false;
   }
+
 console.log('test find icecream', find('icecream', food));
 console.log('test find pasta', find('pasta', food));
 console.log('test find pizza', find('pizza', food));
 console.log('find candy (result shoud be false)', find('candy', food));
+
 // ----------------------
 // Stretch Goals
 // ----------------------
