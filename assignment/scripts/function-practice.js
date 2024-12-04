@@ -63,7 +63,13 @@ console.log('test getLast undefined', getLast(colors));
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find(value, array) {
-array.length
+  for (elements of array){
+  if (i = array.length, value === (array[i], i++)){
+return true
+  } else {
+return false
+  }
+}
 }
 
 // ----------------------
