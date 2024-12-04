@@ -43,8 +43,8 @@ function isPositive(number) {
     return false
   } 
 }
-console.log('test isPositive', isPositive(3));
-console.log('test isPositive false outcome', isPositive(-4));
+console.log('test isPositive 5', isPositive(5));
+console.log('test isPositive -3', isPositive(-3));
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
 
@@ -55,23 +55,25 @@ let animals = ['cat', 'dog', 'cow', 'pig'];
 let colors = [];
 function getLast(array) {
 let lastItem = array.pop();
-return lastItem
+return lastItem;
 }
 console.log('test getLast', getLast(animals));
 console.log('test getLast undefined', getLast(colors));
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
+let food = ['pasta', 'pizza', 'icecream'];
 function find(value, array) {
-  for (elements of array){
-  if (i = array.length, value === (array[i], i++)){
-return true
-  } else {
-return false
+  for (let index = 0; index < array.length; index++)
+  if (array[index] === value){
+return true;
   }
-}
-}
-
+return false;
+  }
+console.log('test find icecream', find('icecream', food));
+console.log('test find pasta', find('pasta', food));
+console.log('test find pizza', find('pizza', food));
+console.log('find candy (result shoud be false)', find('candy', food));
 // ----------------------
 // Stretch Goals
 // ----------------------
